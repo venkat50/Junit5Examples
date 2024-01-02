@@ -10,6 +10,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.jupiter.version>5.9.1</junit.jupiter.version>
     <junit.platform.version>1.9.1</junit.platform.version>
+    <harnessArgLine></harnessArgLine>
   </properties>
   <dependencies>
     <dependency>
@@ -78,7 +79,7 @@
           <testFailureIgnore>true</testFailureIgnore>
           <!--<forkCount>2</forkCount>
           <reuseForks>true</reuseForks>
-          <argLine>${surefireArgLine}</argLine>-->
+          <argLine>${harnessArgLine} ${argLine} ${surefireArgLine}</argLine>-->
           <!--<test>com.howtodoinjava.junit5.examples.xmlReport.HelloTest</test>-->
         </configuration>
       </plugin>
