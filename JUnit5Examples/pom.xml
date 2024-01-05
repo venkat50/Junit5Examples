@@ -79,7 +79,7 @@
           <testFailureIgnore>true</testFailureIgnore>
           <!--<forkCount>2</forkCount>
           <reuseForks>true</reuseForks>
-          <argLine>${harnessArgLine} ${argLine} ${surefireArgLine}</argLine>-->
+          <argLine>${surefireArgLine}</argLine>-->
           <!--<test>com.howtodoinjava.junit5.examples.xmlReport.HelloTest</test>-->
         </configuration>
       </plugin>
