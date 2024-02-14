@@ -75,8 +75,8 @@
               junit.platform.reporting.open.xml.enabled = false
               junit.platform.reporting.output.dir = target/surefire-reports-open-xml
             </configurationParameters>
-          <reportsDirectory>${reportDir}</reportsDirectory>
           </properties>
+          <reportsDirectory>${reportDir}</reportsDirectory>
           <testFailureIgnore>true</testFailureIgnore>
           <!--<forkCount>2</forkCount>
           <reuseForks>true</reuseForks>
