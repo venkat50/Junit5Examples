@@ -10,6 +10,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.jupiter.version>5.9.1</junit.jupiter.version>
     <junit.platform.version>1.9.1</junit.platform.version>
+    <reportDir>target/surefire-reports</reportDir>
   </properties>
   <dependencies>
     <dependency>
@@ -71,9 +72,10 @@
         <configuration>
           <properties>
             <configurationParameters>
-              junit.platform.reporting.open.xml.enabled = false
+              junit.platform.reporting.open.xml.enabled = true
               junit.platform.reporting.output.dir = target/surefire-reports-open-xml
             </configurationParameters>
+            <reportsDirectory>${reportsDir}</reportsDirectory>
           </properties>
 
           <testFailureIgnore>true</testFailureIgnore>
